@@ -49,3 +49,7 @@ if [[ $N -gt 0 ]]; then
 else
 	loged "无下载任务！"
 fi
+DT=$(date +"%Y%m%d %H:%M:%S")
+cd  /home/dissipator520/vfm
+git commit free.txt box/downed.ls box/log* -m " $DT"
+git push
