@@ -2513,3 +2513,13 @@ error: cannot fork() for gc: Cannot allocate memory
 /home/dissipator520/vfm/box/piliang.sh: xmalloc: .././subst.c:9100: cannot allocate 112 bytes (69632 bytes allocated)
 Already up-to-date.
 20170925 12:59:16:  开始批量任务
+[master 3d9f899]  20170925 12:59:21
+ 3 files changed, 24 insertions(+), 2 deletions(-)
+To github.com:dissipator/gg-auto-get.git
+   585f63f..3d9f899  master -> master
+Already up-to-date.
+20170925 13:00:16:  开始批量任务
+20170925 13:00:21:  发现第1下载URL
+-u|--urlPrintextractedinformationwithURLs.
+-I|--input-fileReadnon-playlisturlsfromfile.
+cat: List.txt: No such file or directory
