@@ -2,6 +2,8 @@
 
 export LC_CTYPE=en_US.UTF-8
 
+cd  /home/dissipator520/vfm
+git pull
 loged () {
 	logs="$1"
 	DT=$(date +"%Y%m%d %H:%M:%S")
