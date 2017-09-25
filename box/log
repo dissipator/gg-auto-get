@@ -2653,3 +2653,13 @@ Already up-to-date.
 -u|--urlPrintextractedinformationwithURLs.
 -I|--input-fileReadnon-playlisturlsfromfile.
 cat: List.txt: No such file or directory
+[master 703892e]  20170925 20:01:02
+ 1 file changed, 10 insertions(+)
+error: cannot create thread: Cannot allocate memory
+fatal: send-pack: unable to fork off sideband demultiplexer
+Already up-to-date.
+20170925 20:59:15:  开始批量任务
+20170925 20:59:19:  发现第1下载URL
+-u|--urlPrintextractedinformationwithURLs.
+-I|--input-fileReadnon-playlisturlsfromfile.
+cat: List.txt: No such file or directory
