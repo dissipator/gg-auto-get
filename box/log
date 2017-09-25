@@ -2440,3 +2440,24 @@ cat: List.txt: No such file or directory
 -u|--urlPrintextractedinformationwithURLs.
 -I|--input-fileReadnon-playlisturlsfromfile.
 cat: List.txt: No such file or directory
+20170925 08:59:03:  开始批量任务
+20170925 08:59:07:  发现第1下载URL
+-u|--urlPrintextractedinformationwithURLs.
+-I|--input-fileReadnon-playlisturlsfromfile.
+cat: List.txt: No such file or directory
+20170925 09:00:04:  开始批量任务
+20170925 09:00:07:  发现第1下载URL
+-u|--urlPrintextractedinformationwithURLs.
+-I|--input-fileReadnon-playlisturlsfromfile.
+cat: List.txt: No such file or directory
+From github.com:dissipator/gg-auto-get
+   fb39c06..9164efc  master     -> origin/master
+Updating fb39c06..9164efc
+Fast-forward
+ README.md | 5 +++++
+ 1 file changed, 5 insertions(+)
+20170925 09:59:09:  开始批量任务
+20170925 09:59:13:  发现第1下载URL
+-u|--urlPrintextractedinformationwithURLs.
+-I|--input-fileReadnon-playlisturlsfromfile.
+cat: List.txt: No such file or directory
