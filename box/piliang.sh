@@ -51,5 +51,5 @@ else
 fi
 DT=$(date +"%Y%m%d %H:%M:%S")
 cd  /home/dissipator520/vfm
-git commit free.txt box/downed.ls box/log* -m " $DT"
+git commit free.txt box/downed.ls box/log* box/you-getlist -m " $DT"
 git push
