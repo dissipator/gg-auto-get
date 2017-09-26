@@ -2865,3 +2865,9 @@ Already up-to-date.
 -u|--urlPrintextractedinformationwithURLs.
 -I|--input-fileReadnon-playlisturlsfromfile.
 cat: List.txt: No such file or directory
+[master 7ea35e3]  20170926 07:00:28
+ 1 file changed, 10 insertions(+)
+To github.com:dissipator/gg-auto-get.git
+   cc7689f..7ea35e3  master -> master
+20170926 07:34:49:  开始批量任务
+20170926 07:34:53:  发现第1下载URL
