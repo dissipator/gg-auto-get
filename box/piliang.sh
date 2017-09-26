@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export LC_CTYPE=en_US.UTF-8
-DDT=$(date +"%Y%m%d %H:%M:%S")
+DDT=$(date +"%Y%m%d-%H-%M")
 cd  /home/dissipator520/vfm
 git pull
 
@@ -35,7 +35,7 @@ if [[ $N -gt 0 ]]; then
 				    mkdir -p $DDT
 					you-get -o ~/vfm/box/youtube/$DDT $1 "$line" >>~/vfm/box/log.log
 					loged "$NAME下载完成"
-					echo "$line" >>box/downed/$DDTtxt
+					echo "$line" >>box/downed/$DDT.txt
 					git add box/downed/$DDT.txt
 					sed -i '/$line/d' ~/vfm/box/you-getlist
 				done
@@ -45,7 +45,7 @@ if [[ $N -gt 0 ]]; then
 			 	mkdir -p $DDT
 				you-get -o ~/vfm/box/youtube/$DDT $lss >>~/vfm/box/log.log
 				loged "$NAME下载完成"
-				echo "$line" >>box/downed/$DDTtxt
+				echo "$line" >>box/downed/$DDT.txt
 				git add box/downed/$DDT.txt
 				sed -i '/$line/d' ~/vfm/box/you-getlist
 			fi
