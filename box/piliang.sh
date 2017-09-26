@@ -35,6 +35,7 @@ if [[ $N -gt 0 ]]; then
 					you-get -o ~/vfm/box/youtube/$DDT $1 "$line" >>~/vfm/box/log.log
 					loged "$NAME下载完成"
 					echo "$line" >>~/vfm/box/$DDTdowned.txt
+					git add box/$DDTdowned.txt
 					sed -i '/$line/d' ~/vfm/box/you-getlist
 				done
 			else
@@ -44,6 +45,7 @@ if [[ $N -gt 0 ]]; then
 				you-get -o ~/vfm/box/youtube/$DDT $lss >>~/vfm/box/log.log
 				loged "$NAME下载完成"
 				echo "$line" >>~/vfm/box/$DDTdowned.txt
+				git add box/$DDTdowned.txt
 				sed -i '/$line/d' ~/vfm/box/you-getlist
 			fi
 		let I=$I+1
@@ -55,6 +57,6 @@ else
 fi
 
 cd  /home/dissipator520/vfm
-git add box/downed* box/log*
-git commit free.txt box/downed* box/log* box/you-getlist -m " $DDT"
+
+git commit -m " $DDT"
 git push
