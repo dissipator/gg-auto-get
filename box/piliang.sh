@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export LC_CTYPE=en_US.UTF-8
-
+DDT=$(date +"%Y%m%d %H:%M:%S")
 cd  /home/dissipator520/vfm
 git pull
 loged () {
@@ -30,17 +30,19 @@ if [[ $N -gt 0 ]]; then
 				do
 				    loged "开始第$line下载项$NAME"
 				    loged "you-get -o ~/vfm/box/youtube/ $1 $line"
-					you-get -o ~/vfm/box/youtube/ $1 "$line" >>~/vfm/box/log.log
+				    mkdir -p $DDT
+					you-get -o ~/vfm/box/youtube/$DDT $1 "$line" >>~/vfm/box/log.log
 					loged "$NAME下载完成"
-					echo "$line" >>~/vfm/box/downed.ls
+					echo "$line" >>~/vfm/box/$DDTdowned.txt
 					sed -i '/$line/d' ~/vfm/box/you-getlist
 				done
 			else
 			 	loged "开始下载$NAME项$lss"
 			 	loged "you-get $lss >>~/vfm/box/l.ls"
-				you-get -o ~/vfm/box/youtube/ $lss >>~/vfm/box/log.log
+			 	mkdir -p $DDT
+				you-get -o ~/vfm/box/youtube/$DDT $lss >>~/vfm/box/log.log
 				loged "$NAME下载完成"
-				echo "$line" >>~/vfm/box/downed.ls
+				echo "$line" >>~/vfm/box/$DDTdowned.txt
 				sed -i '/$line/d' ~/vfm/box/you-getlist
 			fi
 		let I=$I+1
@@ -51,5 +53,5 @@ else
 fi
 DT=$(date +"%Y%m%d %H:%M:%S")
 cd  /home/dissipator520/vfm
-git commit free.txt box/downed.ls box/log* box/you-getlist -m " $DT"
+git commit free.txt box/downed* box/log* box/you-getlist -m " $DT"
 git push
