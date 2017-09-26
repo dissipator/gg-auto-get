@@ -2836,3 +2836,13 @@ Already up-to-date.
 -u|--urlPrintextractedinformationwithURLs.
 -I|--input-fileReadnon-playlisturlsfromfile.
 cat: List.txt: No such file or directory
+[master e12b42a]  20170926 05:59:29
+ 1 file changed, 10 insertions(+)
+To github.com:dissipator/gg-auto-get.git
+   b90ad38..e12b42a  master -> master
+Already up-to-date.
+20170926 06:00:19:  开始批量任务
+20170926 06:00:24:  发现第1下载URL
+-u|--urlPrintextractedinformationwithURLs.
+-I|--input-fileReadnon-playlisturlsfromfile.
+cat: List.txt: No such file or directory
