@@ -2773,3 +2773,16 @@ Already up-to-date.
 -u|--urlPrintextractedinformationwithURLs.
 -I|--input-fileReadnon-playlisturlsfromfile.
 cat: List.txt: No such file or directory
+[master 828ec15]  20170926 02:00:37
+ 1 file changed, 10 insertions(+)
+ssh: error while loading shared libraries: libcrypto.so.1.0.2: failed to map segment from shared object
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Already up-to-date.
+20170926 02:59:15:  开始批量任务
+20170926 02:59:19:  发现第1下载URL
+-u|--urlPrintextractedinformationwithURLs.
+-I|--input-fileReadnon-playlisturlsfromfile.
+cat: List.txt: No such file or directory
