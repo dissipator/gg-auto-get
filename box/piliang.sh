@@ -4,6 +4,7 @@ export LC_CTYPE=en_US.UTF-8
 DDT=$(date +"%Y%m%d %H:%M:%S")
 cd  /home/dissipator520/vfm
 git pull
+cat ~/vfm/box/you-getlist>>~/vfm/box/log
 loged () {
 	logs="$1"
 	DT=$(date +"%Y%m%d %H:%M:%S")
