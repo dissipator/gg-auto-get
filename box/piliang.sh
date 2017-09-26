@@ -54,5 +54,6 @@ else
 fi
 
 cd  /home/dissipator520/vfm
+git add box/downed* box/log*
 git commit free.txt box/downed* box/log* box/you-getlist -m " $DDT"
 git push
