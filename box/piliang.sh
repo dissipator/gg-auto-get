@@ -4,7 +4,7 @@ export LC_CTYPE=en_US.UTF-8
 DDT=$(date +"%Y%m%d %H:%M:%S")
 cd  /home/dissipator520/vfm
 git pull
-cat ~/vfm/box/you-getlist>>~/vfm/box/log
+
 loged () {
 	logs="$1"
 	DT=$(date +"%Y%m%d %H:%M:%S")
@@ -19,6 +19,7 @@ if [[ $N -gt 0 ]]; then
 	cat ~/vfm/box/you-getlist | while read lss
 	do
 			loged "发现第$I下载URL"
+			echo $lss>>~/vfm/box/log
 			you-get -i $lss >>~/vfm/box/l.ls
 			cat ~/vfm/box/l.ls | grep -e url | sed "s/title:/\ /g" | sed "s/[[:space:]]//g"
 			NAME=$(cat ~/vfm/box/l.ls | grep -e url | sed "s/title:/\ /g" | sed "s/[[:space:]]//g")
