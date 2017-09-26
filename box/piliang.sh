@@ -59,5 +59,5 @@ fi
 
 cd  /home/dissipator520/vfm
 
-git commit box/you-getlist box/downed/$DDTtxt box/log  -m " $DDT"
+git commit box/you-getlist -m " $DDT"
 git push
