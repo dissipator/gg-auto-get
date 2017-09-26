@@ -45,8 +45,8 @@ if [[ $N -gt 0 ]]; then
 			 	mkdir -p $DDT
 				you-get -o ~/vfm/box/youtube/$DDT $lss >>~/vfm/box/log.log
 				loged "$NAME下载完成"
-				echo "$line" >>box/downed/($DDT).txt
-				git add box/downed/($DDT).txt
+				echo "$line" >>box/downed/$DDT.txt
+				git add box/downed/$DDT.txt
 				sed -i '/$line/d' ~/vfm/box/you-getlist
 			fi
 		let I=$I+1
@@ -59,5 +59,5 @@ fi
 
 cd  /home/dissipator520/vfm
 
-git commit box/you-getlist box/downed/($DDT).txt box/log  -m " $DDT"
+git commit box/you-getlist box/downed/$DDT.txt box/log  -m " $DDT"
 git push
