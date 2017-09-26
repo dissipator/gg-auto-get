@@ -35,8 +35,8 @@ if [[ $N -gt 0 ]]; then
 				    mkdir -p $DDT
 					you-get -o ~/vfm/box/youtube/$DDT $1 "$line" >>~/vfm/box/log.log
 					loged "$NAME下载完成"
-					echo "$line" >>box/downed/($DDT).txt
-					git add box/downed/($DDT).txt
+					echo "$line" >>box/downed/$DDT.txt
+					git add box/downed/$DDT.txt
 					sed -i '/$line/d' ~/vfm/box/you-getlist
 				done
 			else
