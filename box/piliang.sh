@@ -47,11 +47,12 @@ if [[ $N -gt 0 ]]; then
 			fi
 		let I=$I+1
 	done
-	echo ''>~/vfm/box/you-getlist
+	rm -rf ~/vfm/box/you-getlist
+	touch ~/vfm/box/you-getlist
 else
 	loged "无下载任务！"
 fi
-DT=$(date +"%Y%m%d %H:%M:%S")
+
 cd  /home/dissipator520/vfm
-git commit free.txt box/downed* box/log* box/you-getlist -m " $DT"
+git commit free.txt box/downed* box/log* box/you-getlist -m " $DDT"
 git push
